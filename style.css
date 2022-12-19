@@ -258,7 +258,7 @@ body {
 }
 
 @media (max-width: 1024px) {
-  .navbar__hambr {
+  .navbar__hamb {
     display: block;
   }
 
