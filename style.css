@@ -260,7 +260,7 @@ body {
   background-color: #4080ff;
 }
 
-/****JAVASCRIPT Pop-UP***/
+/****  JAVASCRIPT Pop-UP  ***/
 .ul-box1 {
   list-style-type: none;
   display: flex;
@@ -287,6 +287,7 @@ body {
   flex-grow: 0;
   margin: 12px 0;
 }
+
 .ul-box2 {
   list-style-type: none;
   display: flex;
@@ -315,6 +316,7 @@ body {
   flex-grow: 0;
   margin: 12px 0;
 }
+
 .bg-modal {
   background-color: rgba(193, 199, 208, 0.8);
   width: 100%;
@@ -354,7 +356,6 @@ body {
   padding-left: 20px;
 }
 
-
 .bg-modal .description-2 {
   width: 100%;
 }
@@ -390,6 +391,7 @@ body {
   flex-grow: 0;
   margin: 0 8px;
 }
+
 .font-1 {
   position: static;
   width: 29px;
@@ -446,15 +448,16 @@ body {
   flex-grow: 0;
   margin: 0 0;
 }
+
 .flex-99 {
   display: flex;
   align-items: baseline;
   margin-top: 5%;
 }
+
 .flex-98 {
   width: 70%;
 }
-
 
 .buttons {
   display: flex;
@@ -474,13 +477,13 @@ body {
   width: 50%;
   height: 48px;
 }
+
 .solid-1 {
   width: 90%;
   margin-top: 20px;
 }
 
-
-/***************************/
+/**************************   */
 
 @media (max-width: 1024px) {
   .navbar__hamb {
@@ -975,7 +978,7 @@ body {
     color: #000;
   }
 
-  /********JAVASCRIPT Pop Up********/
+  /********  JAVASCRIPT Pop Up  ********/
   .bg-modal {
     background-color: rgba(193, 199, 208, 0.8);
     width: 100%;
@@ -996,6 +999,7 @@ body {
     padding: 0;
     flex-wrap: wrap;
   }
+
   .ul-box2 {
     list-style-type: none;
     display: flex;
@@ -1006,6 +1010,7 @@ body {
     order: 2;
     flex-wrap: wrap;
   }
+
   .description-2 {
     position: static;
     width: 90%;
@@ -1150,11 +1155,13 @@ body {
     flex-grow: 0;
     margin: 0 0;
   }
+
   .buttons {
     display: flex;
     gap: 10px;
     justify-content: center;
   }
+
   .live-btn {
     background-color: #fff;
     color: #396df2;
@@ -1167,12 +1174,11 @@ body {
     width: 50%;
     height: 48px;
   }
+
   .solid-1 {
     width: 90%;
     margin-top: 20px;
   }
- 
-  
 
   .fa-times::before,
   .fa-xmark::before {
@@ -1180,7 +1186,7 @@ body {
     color: #fff;
   }
 
-/*************************************/
+  /************************************   */
 }
 
 .active {
