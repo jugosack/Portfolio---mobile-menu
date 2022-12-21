@@ -1,11 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,100&display=swap");
 
+/*
 *,
 ::before,
 ::after {
   box-sizing: border-box;
   font-family: "Poppins", sans-serif;
 }
+*/
 
 body,
 h1,
@@ -451,10 +454,31 @@ body {
 .flex-98 {
   width: 70%;
 }
+
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+.live-btn {
+  background-color: #fff;
+  color: #396df2;
+  padding: 6px 12.8px;
+  font-size: 16px;
+  border: 1px solid #6070ff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 50%;
+  height: 48px;
+}
 .solid-1 {
   width: 90%;
   margin-top: 20px;
 }
+
 
 /***************************/
 
@@ -1126,12 +1150,36 @@ body {
     flex-grow: 0;
     margin: 0 0;
   }
+  .buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+  }
+  .live-btn {
+    background-color: #fff;
+    color: #396df2;
+    padding: 6px 12.8px;
+    font-size: 16px;
+    border: 1px solid #6070ff;
+    box-sizing: border-box;
+    border-radius: 8px;
+    cursor: pointer;
+    width: 50%;
+    height: 48px;
+  }
   .solid-1 {
     width: 90%;
     margin-top: 20px;
   }
-
+ 
   
+
+  .fa-times::before,
+  .fa-xmark::before {
+    content: "\f00d";
+    color: #fff;
+  }
+
 /*************************************/
 }
 

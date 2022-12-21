@@ -96,11 +96,11 @@ function popUp(index) {
             <div class="buttons">
               <button type="button" class="live-btn">
                 see live
-                <i class="fas fa-check"></i>
+                <i class='fas fa-check'></i>
               </button>
               <button type="button" class="live-btn">
                 see source
-                <i class="fab fa-github"></i>
+                <i class='fab fa-github'></i>
               </button>
             </div>
           </div>
