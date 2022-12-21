@@ -9,8 +9,8 @@ document.querySelectorAll('.navbar__menu__link').forEach((n) => n.addEventListen
   navMenu.classList.remove('active');
 }));
 
-/***************************************/
-/*************************************8*/
+/** ************************************ */
+/** ***********************************8 */
 const cards = [
   {
     title: 'Tonic',
