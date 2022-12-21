@@ -1,6 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap");
 
-
 /****  JAVASCRIPT Pop-UP  ***/
 .ul-box1 {
   list-style-type: none;
@@ -224,22 +223,23 @@
   margin-top: 20px;
 }
 
-.fa-check:before {
+.fa-check::before {
   content: "\f00c";
-  font-family: "Font Awesome 6 Free";
+  font-family: "Font Awesome 6 Free", sans-serif;
 }
-.fa-github:before {
+
+.fa-github::before {
   content: "\f09b";
-  font-family: "Font Awesome 6 Brands";
+  font-family: "Font Awesome 6 Brands", sans-serif;
 }
+
 /**************************   */
 *,
 ::before,
 ::after {
   box-sizing: border-box;
- font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-
 
 body,
 h1,
@@ -490,8 +490,6 @@ body {
   transition: all 0.3s ease;
   background-color: #4080ff;
 }
-
-
 
 @media (max-width: 1024px) {
   .navbar__hamb {
