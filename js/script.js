@@ -62,7 +62,14 @@ function popUp(index) {
     title, info, description, skills, image,
   } = cards[index];
   const [info1, info2, info3] = info;
-  const [skill1, skill2, skill3] = skills;
+  //const [skill1, skill2, skill3] = skills;  
+  // <li class="highlight font-1">${skill1}</li> 
+            //   <li class="highlight font-2">${skill2}</li> 
+        // <li class="highlight font-3">${skill3}</li> 
+
+  const skillsHtml = skills
+  .map((s) => `<li class="highlight font-1">${s}</li>`)
+  .join('');
 
   bgModal.innerHTML = `
   <div class="modal-content">
@@ -88,9 +95,10 @@ function popUp(index) {
           </div>
           <div>
             <ul class="ul-box2 flex0">
-              <li class="highlight font-1">${skill1}</li>
-              <li class="highlight font-2">${skill2}</li>
-              <li class="highlight font-3">${skill3}</li>
+            
+
+             ${skillsHtml}
+
             </ul>
             <hr class="solid-1">
             <div class="buttons">
