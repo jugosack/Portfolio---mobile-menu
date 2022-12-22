@@ -27,7 +27,7 @@ const cards = [
     info: ['facebook', 'full stack dev', '2015'],
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails','css', 'javascript'],
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     image: 'images/desktop/multi-post-stories-project.png',
     liveLink: 'see live',
     sourceLink: 'see source',
@@ -37,7 +37,7 @@ const cards = [
     info: ['facebook', 'backend', '2015'],
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails','css', 'javascript'],
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     image: 'images/desktop/facebook-360-project.png',
     liveLink: 'see live',
     sourceLink: 'see source',
@@ -47,7 +47,7 @@ const cards = [
     info: ['UBER', ' Lead Developer', '2015'],
     description:
     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails','css', 'javascript'],
+    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
     image: 'images/desktop/uber-navigation-project.png',
     liveLink: 'see live',
     sourceLink: 'see source',
@@ -62,14 +62,14 @@ function popUp(index) {
     title, info, description, skills, image,
   } = cards[index];
   const [info1, info2, info3] = info;
-  //const [skill1, skill2, skill3] = skills;  
-  // <li class="highlight font-1">${skill1}</li> 
-            //   <li class="highlight font-2">${skill2}</li> 
-        // <li class="highlight font-3">${skill3}</li> 
+  // const [skill1, skill2, skill3] = skills;
+  // <li class="highlight font-1">${skill1}</li>
+  //   <li class="highlight font-2">${skill2}</li>
+  // <li class="highlight font-3">${skill3}</li>
 
   const skillsHtml = skills
-  .map((s) => `<li class="highlight font-1">${s}</li>`)
-  .join('');
+    .map((s) => `<li class="highlight font-1">${s}</li>`)
+    .join('');
 
   bgModal.innerHTML = `
   <div class="modal-content">

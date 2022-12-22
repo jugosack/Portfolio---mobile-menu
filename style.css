@@ -29,14 +29,14 @@
 }
 
 .ul-box2 {
-  /*list-style-type: none;
+  /* list-style-type: none;
   display: flex;
   flex-direction: row;
   gap: 8px;
   margin: 0;
   padding: 0;
   order: 2;
-  flex-wrap: wrap;*/
+  flex-wrap: wrap; */
 
   list-style-type: none;
   display: flex;
@@ -45,7 +45,6 @@
   margin: 0;
   padding: 0;
   order: 2;
-
 }
 
 .description-3 {
@@ -126,13 +125,15 @@
   margin-top: 20px;
   margin-bottom: 36px;
 }
+
 .flex-99 {
   display: flex;
   align-items: baseline;
   margin-top: 5%;
 }
+
 .highlight {
-  padding: 0px 3px 0px 3px;
+  padding: 0 3px 0 3px;
   position: static;
   width: 45px;
   height: 24px;
@@ -147,7 +148,7 @@
 }
 
 .font-1 {
-  /*position: static;
+  /* position: static;
   width: 29px;
   height: 16px;
   left: 12px;
@@ -179,7 +180,6 @@
   flex: none;
   order: 0;
   flex-grow: 0;
-  
 }
 
 .font-2 {
@@ -218,12 +218,6 @@
   order: 0;
   flex-grow: 0;
   margin: 0 0;
-}
-
-.flex-99 {
-  display: flex;
-  align-items: baseline;
-  margin-top: 5%;
 }
 
 .flex-98 {
@@ -1107,7 +1101,7 @@ body {
 
   .close-button {
     transform: rotate(45deg);
-    margin-top:-35px;
+    margin-top: -35px;
     cursor: pointer;
     font-size: 40px;
     color: grey;
@@ -1121,14 +1115,16 @@ body {
     margin-top: 20px;
     margin-bottom: 36px;
   }
+
   .flex-99 {
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: baseline;
     margin-top: 5%;
   }
+
   .highlight {
-   /* padding-right: 12px;
+    /* padding-right: 12px;
     position: static;
     width: 45px;
     height: 24px;
@@ -1141,22 +1137,22 @@ body {
     flex-grow: 0;
     margin: 0 8px;
     */
-    padding: 0px 3px 0px 3px;
-        position: static;
-        width: 45px;
-        height: 24px;
-        left: 61px;
-        top: 0;
-        background: #ebebff;
-        border-radius: 3px;
-        flex: none;
-        order: 1;
-        flex-grow: 0;
-        margin: 0 8px;
+    padding: 0 3px 0 3px;
+    position: static;
+    width: 45px;
+    height: 24px;
+    left: 61px;
+    top: 0;
+    background: #ebebff;
+    border-radius: 3px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    margin: 0 8px;
   }
 
   .font-1 {
-   /* position: static;
+    /* position: static;
     width: 29px;
     height: 16px;
     left: 12px;
@@ -1171,23 +1167,22 @@ body {
     flex: none;
     order: 0;
     flex-grow: 0;
-    margin: 0 0;*/
+    margin: 0 0; */
     position: static;
-  width: auto;
-  height: 16px;
-  left: 12px;
-  top: 4px;
-  font-family: "Poppins", sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 16px;
-  letter-spacing: 0.03em;
-  color: #6070ff;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
- 
+    width: auto;
+    height: 16px;
+    left: 12px;
+    top: 4px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    color: #6070ff;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
   }
 
   .font-2 {
