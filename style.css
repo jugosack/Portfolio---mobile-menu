@@ -989,11 +989,11 @@ body {
     list-style-type: none;
     display: flex;
     flex-direction: row;
-    gap: 8px;
+    gap: 1px;
     margin: 0;
     padding: 0;
     order: 2;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
   }
 
   .flex-98 {
