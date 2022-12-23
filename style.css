@@ -231,6 +231,16 @@
   font-family: "Font Awesome 6 Brands", sans-serif;
 }
 
+.error {
+  font-family: "poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  color: #ebebff;
+}
+
 /* end off javascript  */
 *,
 ::before,
@@ -781,6 +791,11 @@ body {
   color: red;
 }
 
+.error {
+  text-align: center;
+  color: red;
+}
+
 .modal {
   background: #fff;
   padding: 1.5rem;
@@ -1181,7 +1196,15 @@ body {
     content: "\f00d";
     color: #fff;
   }
-
+  .error {
+    font-family: "poppins", sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 28px;
+    text-align: center;
+    color: #ebebff;
+  }
   /************************************   */
 }
 
