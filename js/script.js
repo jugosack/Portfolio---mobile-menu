@@ -122,21 +122,21 @@ btns.forEach((btn, index) => {
     popUp(index);
   });
 });
-/******* END OF POP-UP WINDOW ***/
+/** ***** END OF POP-UP WINDOW ** */
 
-/******** ADD VALIDATE CONTACT FORM ******/
+/** ****** ADD VALIDATE CONTACT FORM ***** */
 const form = document.getElementById('form');
 const email = document.getElementById('mail');
 const error = document.querySelector('.error');
 
 form.addEventListener('submit', (e) => {
   const message = [];
-  if(email.value !== email.value.toLowerCase()){
-e.preventDefault();
-message.push('E-mail has to be in lowercase letters !!!');
+  if (email.value !== email.value.toLowerCase()) {
+    e.preventDefault();
+    message.push('E-mail has to be in lowercase letters !!!');
   }
   if (message.length > 0) {
     error.innerText = message.join(', ');
-}
+  }
 });
-/******** END OF VALIDATE CONTACT FORM ******/
+/** ****** END OF VALIDATE CONTACT FORM ***** */

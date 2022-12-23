@@ -238,7 +238,7 @@
   font-size: 20px;
   line-height: 28px;
   text-align: center;
-  color: #ebebff;
+  color: red;
 }
 
 /* end off javascript  */
@@ -786,16 +786,6 @@ body {
   margin: 18px 0;
 }
 
-.error {
-  text-align: center;
-  color: red;
-}
-
-.error {
-  text-align: center;
-  color: red;
-}
-
 .modal {
   background: #fff;
   padding: 1.5rem;
@@ -1196,6 +1186,7 @@ body {
     content: "\f00d";
     color: #fff;
   }
+
   .error {
     font-family: "poppins", sans-serif;
     font-style: normal;
@@ -1205,6 +1196,7 @@ body {
     text-align: center;
     color: #ebebff;
   }
+
   /************************************   */
 }
 
