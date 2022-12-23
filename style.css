@@ -12,7 +12,6 @@
 
 .description-2 {
   position: static;
-  
   height: 100%;
   left: 0;
   top: 92px;
@@ -29,8 +28,6 @@
 }
 
 .ul-box2 {
-  
-
   list-style-type: none;
   display: flex;
   flex-direction: row;
@@ -141,8 +138,6 @@
 }
 
 .font-1 {
-  
-
   position: static;
   width: auto;
   height: 16px;
@@ -512,7 +507,6 @@ body {
     transform: translateY(-8px) rotate(-45deg);
     background-color: white;
   }
-
 }
 
 /*******   */
@@ -1001,10 +995,11 @@ body {
     order: 2;
     flex-wrap: wrap;
   }
-  
+
   .flex-98 {
     width: 100%;
-}
+  }
+
   .description-2 {
     position: static;
     width: 90%;
@@ -1087,7 +1082,6 @@ body {
   }
 
   .highlight {
-    
     padding: 0 3px 0 3px;
     position: static;
     width: 45px;
@@ -1103,7 +1097,6 @@ body {
   }
 
   .font-1 {
-    
     position: static;
     width: auto;
     height: 16px;

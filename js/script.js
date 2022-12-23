@@ -62,7 +62,6 @@ function popUp(index) {
     title, info, description, skills, image,
   } = cards[index];
   const [info1, info2, info3] = info;
-  
 
   const skillsHtml = skills
     .map((s) => `<li class="highlight font-1">${s}</li>`)
