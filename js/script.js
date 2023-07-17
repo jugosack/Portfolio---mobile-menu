@@ -1,142 +1,336 @@
-const hamburger = document.querySelector('.navbar__hamb');
-const navMenu = document.querySelector('.navbar__menu');
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  navMenu.classList.toggle('active');
-});
-document.querySelectorAll('.navbar__menu__link').forEach((n) => n.addEventListener('click', () => {
-  hamburger.classList.remove('active');
-  navMenu.classList.remove('active');
-}));
+/* eslint-disable max-len */
+const mobileoption = document.getElementById('mobileoption');
+const body = document.querySelector('body');
+const barClick = document.getElementById('barClick');
+const popupWindow = document.getElementById('popupmenu');
+const popClient = document.getElementById('popclient');
+const popPicture = document.getElementById('poppicture');
+const popTag = document.getElementById('poptag');
+const popMobileDetail = document.getElementById('popmobiledetail');
+const popDesktopDetail = document.getElementById('popdesktopdetail');
+const worksCard = document.querySelector('.workscard');
+const popName = document.getElementById('popname');
+const seeLive = document.getElementById('seelive');
+const seeSource = document.getElementById('seesource');
+const inputName = document.getElementById('inputname');
+mobileoption.style.display = 'none';
+const projectData = [
+  {
+    desktopName: 'EventConnect',
+    mobileName: 'EventConnect',
+    desktopClient: ['CAPSTONE', '&#x2022 Full Stack Dev', '&#x2022 2023'],
+    mobileClient: ['CAPSTONE', '&#x2022 Full Stack Dev', '&#x2022 2023'],
+    desktopTag: ['html', 'css', 'javascript', 'Github', 'Ruby on Rails', 'React'],
+    mobileTag: ['Rails', 'React', 'PostgreSQL'],
+    desktopPicture: './images/evecon_dek.png',
+    mobilePicture: './images/evecon_dek.png',
+    desktopAlt: 'EventConnect',
+    mobileAlt: 'EventConnect',
+    desktopdetail: 'Event Connect is an application which allows users to create,delete and reserve event.',
+    mobiledetail: 'Event Connect is an application which allows users to create,delete and reserve event.',
+    desktopmainTag: ['Ruby on Rails', 'React', 'PostgreSQL'],
+    popmobiledetail: 'Event Connect is an application which allows users to create,delete and reserve event. A user also can reserve available event.',
+    popdesktopdetail: 'Event Connect is an application which allows users to create,delete and reserve event. A user also can reserve available event.',
+    seelive: 'See live',
+    seesource: 'See Source',
+    liveLink: 'https://event-connect-capstone.web.app/',
+    liveSource: 'https://github.com/jugosack/event_connect_client',
+  },
+  {
+    desktopName: 'Fake Shop',
+    mobileName: 'Fake Shop',
+    desktopClient: ['CAPSTONE', '&#x2022 Front End Dev', '&#x2022 2023'],
+    mobileClient: ['CAPSTONE', '&#x2022 Front End Dev', '&#x2022 2023'],
+    desktopTag: ['html', 'css', 'javascript', 'Github', 'API', 'React'],
+    mobileTag: ['React', 'css', 'javascript'],
+    desktopPicture: './images/fakestore.png',
+    mobilePicture: './images/fakestore_mob.png',
+    desktopAlt: 'Fake Shop',
+    mobileAlt: 'Fake Shop',
+    desktopdetail: 'Simple clothing, electronics and jewelry e-commerce consuming the Fake Store API, using JavaScript, Styled Components, Context API, axios and more.',
+    mobiledetail: 'Simple clothing, electronics and jewelry e-commerce consuming the Fake Store API, using JavaScript, Styled Components, Context API, axios and more.',
+    desktopmainTag: ['html', 'React', 'css', 'javascript'],
+    popmobiledetail: 'Simple clothing, electronics and jewelry e-commerce consuming the Fake Store API, using JavaScript, Styled Components, Context API, axios and more.',
+    popdesktopdetail: 'Simple clothing, electronics and jewelry e-commerce consuming the Fake Store API, using JavaScript, Styled Components, Context API, axios and more.',
+    seelive: 'See live',
+    seesource: 'See Source',
+    liveLink: 'https://fakestoreapi-898e.onrender.com/',
+    liveSource: 'https://github.com/jugosack/react-capstone-fakestore',
+  },
 
-/** ************************************ */
-/** ***********************************8 */
-const cards = [
   {
-    title: 'Tonic',
-    info: ['facebook', 'backend', '2015'],
-    description:
-      "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['css', 'html', 'javascript'],
-    image: 'images/desktop/tonic-project-desktop.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
+    desktopName: 'Budget Application',
+    mobileName: 'Budget Application',
+    desktopClient: ['CAPSTONE', '&#x2022 Full Stack Dev', '&#x2022 2023'],
+    mobileClient: ['CAPSTONE', '&#x2022 Full Stack Dev', '&#x2022 2023'],
+    desktopTag: ['html', 'css', 'Ruby on Rails', 'Github'],
+    mobileTag: ['html', 'css', 'Ruby on Rails'],
+    desktopPicture: './images/fambud_dek.png',
+    mobilePicture: './images/fambud_mob.png',
+    desktopAlt: 'Budget Application',
+    mobileAlt: 'Budget Application',
+    desktopdetail: 'This mobile web app allows users to create categories and add transactions to each category. The app will show the total amount spent on each category. The app is built with Ruby on Rails. The app is deployed on Render.',
+    mobiledetail: 'This mobile web app allows users to create categories and add transactions to each category.',
+    desktopmainTag: ['html', 'Ruby on Rails', 'css'],
+    popmobiledetail: 'This mobile web app allows users to create categories and add transactions to each category. The app will show the total amount spent on each category.',
+    popdesktopdetail: 'This mobile web app allows users to create categories and add transactions to each category. The app will show the total amount spent on each category. The app is built with Ruby on Rails. The app is deployed on Render.',
+    seelive: 'See live',
+    seesource: 'See Source',
+    liveLink: 'https://budgetapprails.onrender.com/',
+    liveSource: 'https://github.com/jugosack/BudgetAppRails',
   },
   {
-    title: 'Multi-Post Stories',
-    info: ['facebook', 'full stack dev', '2015'],
-    description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    image: 'images/desktop/multi-post-stories-project.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
-  {
-    title: 'Facebook 360',
-    info: ['facebook', 'backend', '2015'],
-    description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    image: 'images/desktop/facebook-360-project.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
-  },
-  {
-    title: 'Uber Navigation',
-    info: ['UBER', ' Lead Developer', '2015'],
-    description:
-    "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s. <span class='description-3'> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt animi consequuntur consectetur voluptate accusantium facilis, fuga non minus, </span>",
-    skills: ['html', 'Ruby on rails', 'css', 'javascript'],
-    image: 'images/desktop/uber-navigation-project.png',
-    liveLink: 'see live',
-    sourceLink: 'see source',
+    desktopName: 'MILCON 2023',
+    mobileName: 'MILCON 2023',
+    desktopClient: ['2IDRJA', '&#x2022 Lead Developer', '&#x2022 2022'],
+    mobileClient: ['2IDRJA', '&#x2022 Lead Developer', '&#x2022 2022'],
+    desktopTag: ['html', 'css', 'javascript', 'Github'],
+    mobileTag: ['html', 'css', 'javascript'],
+    desktopPicture: './images/conference_dek.png',
+    mobilePicture: './images/conference_mob.png',
+    desktopAlt: 'MILCON 2023',
+    mobileAlt: 'MILCON 2023',
+    desktopdetail: 'The "MILCON 2023" Capstone project is a website redesign for a conference of the same name. The website was built using HTML, CSS, and JavaScript, and it features a sleek and modern design that reflects the brand aesthetic. The website includes information about the conference, including location, dates and featured speakers.',
+    mobiledetail: 'The "MILCON 2023" Capstone project is a website redesign for a conference of the same name.',
+    desktopmainTag: ['html', 'Github', 'css', 'javascript'],
+    popmobiledetail: 'The "MILCON 2023" Capstone project is a website redesign for a conference of the same name. The website was built using HTML, CSS, and JavaScript, and it features a sleek and modern design that reflects the brand aesthetic. The website includes information about the conference, including location, dates and featured speakers.',
+    popdesktopdetail: 'The "MILCON 2023" Capstone project is a website redesign for a conference of the same name. The website was built using HTML, CSS, and JavaScript, and it features a sleek and modern design that reflects the brand aesthetic. The website includes information about the conference, including location, dates and featured speakers.',
+    seelive: 'See live',
+    seesource: 'See Source',
+    liveLink: 'https://jugosack.github.io/HTML-CSS-JavaScript-capstone-project---Conference-page/',
+    liveSource: 'https://github.com/jugosack/HTML-CSS-JavaScript-capstone-project---Conference-page',
   },
 ];
 
-const btns = document.querySelectorAll('.works button');
-const bgModal = document.querySelector('.bg-modal');
+// add event listener to click barclick
+barClick.addEventListener('click', () => {
+  mobileoption.style.display = 'block';
+  body.style.overflow = 'hidden';
+});
 
-function popUp(index) {
-  const {
-    title, info, description, skills, image,
-  } = cards[index];
-  const [info1, info2, info3] = info;
-
-  const skillsHtml = skills
-    .map((s) => `<li class="highlight font-1">${s}</li>`)
-    .join('');
-
-  bgModal.innerHTML = `
-  <div class="modal-content">
-        <div class="modal-header">
-          <h3 class="tonic">${title}</h3>
-          <span class="close-button">+</span>
-        </div>
-        <ul class="ul-box1 flex0">
-          <li class="canopy">${info1}</li>
-          <li><img src="images/Counter.png" alt="counter" /></li>
-          <li class="light">${info2}</li>
-          <li><img src="images/Counter.png" alt="counter" /></li>
-          <li class="light">${info3}</li>
-        </ul>
-        <a href="#"
-          ><img src="${image}" alt="Snapshoot-Portfolio" class="snapshot"
-        /></a>
-        <div class="flex-99">
-          <div class="flex-98">
-            <p class="description-2 flex0">
-            ${description}
-            </p>
-          </div>
-          <div>
-            <ul class="ul-box2 flex0">
-            
-
-             ${skillsHtml}
-
-            </ul>
-            <hr class="solid-1">
-            <div class="buttons">
-              <button type="button" class="live-btn">
-                see live
-                <i class='fas fa-check'></i>
-              </button>
-              <button type="button" class="live-btn">
-                see source
-                <i class='fab fa-github'></i>
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
-  `;
-  bgModal.style.display = 'flex';
-  document.querySelector('.close-button').addEventListener('click', () => {
-    document.querySelector('.bg-modal').style.display = 'none';
+// add event listener to mobile option
+mobileoption.addEventListener('click', () => {
+  mobileoption.style.display = 'none';
+  body.style.overflow = 'auto';
+});
+// check screen size and turned off mobile option in desktop
+window.addEventListener('resize', () => {
+  if (window.innerWidth >= 768) {
+    mobileoption.style.display = 'none';
+    body.style.overflow = 'auto';
+    inputName.placeholder = 'Lorem Ipsum Dolor';
+  } else {
+    inputName.placeholder = 'Lorem Ipsum';
+  }
+});
+if (window.innerWidth < 768) {
+  inputName.placeholder = 'Lorem Ipsum';
+}
+// close button on popup menu;
+function closePopupMenu() {
+  popupWindow.style.display = 'none';
+  body.style.overflow = 'auto';
+  window.addEventListener('resize', () => {
+    popupWindow.style.display = 'none';
+    body.style.overflow = 'auto';
   });
 }
+closePopupMenu();
 
-btns.forEach((btn, index) => {
-  btn.addEventListener('click', () => {
-    popUp(index);
+// clone cards to display
+for (let i = 0; i <= 2; i += 1) {
+  const clone = worksCard.cloneNode(true);
+  worksCard.after(clone);
+}
+
+const seeProject = Array.from(document.querySelectorAll('.projectbutton'));
+const generateCard = document.getElementsByClassName('workscard');
+
+for (let i = 0; i <= 3; i += 1) {
+  generateCard[i].getElementsByClassName('mobilepic')[0].src = projectData[i].mobilePicture;
+  generateCard[i].getElementsByClassName('desktoppic')[0].src = projectData[i].desktopPicture;
+  generateCard[i].getElementsByClassName('projecttitle')[0].style.display = 'block';
+  generateCard[i].getElementsByClassName('projecttitle')[0].innerHTML = projectData[i].desktopName;
+  while (generateCard[i].getElementsByClassName('client')[0].firstChild) { generateCard[i].getElementsByClassName('client')[0].removeChild(generateCard[i].getElementsByClassName('client')[0].firstChild); }
+  projectData[i].desktopClient.forEach((item, index) => {
+    const li = document.createElement('li');
+    const classname = ['type', 'tech', 'year'];
+    li.innerHTML = item;
+    li.classList.add(classname[index]);
+
+    generateCard[i].getElementsByClassName('client')[0].appendChild(li);
   });
-});
-/** ***** END OF POP-UP WINDOW ** */
+  generateCard[i].getElementsByClassName('projectdetail')[0].style.display = 'block';
+  generateCard[i].getElementsByClassName('projectdetail')[0].innerHTML = projectData[i].desktopdetail;
 
-/** ****** ADD VALIDATE CONTACT FORM ***** */
+  while (generateCard[i].getElementsByClassName('tags')[0].firstChild) { generateCard[i].getElementsByClassName('tags')[0].removeChild(generateCard[i].getElementsByClassName('tags')[0].firstChild); }
+  projectData[i].desktopmainTag.forEach((item) => {
+    const li = document.createElement('li');
+    li.innerHTML = item;
+    generateCard[i].getElementsByClassName('tags')[0].appendChild(li);
+  });
+  window.addEventListener('resize', () => {
+    if (window.innerWidth < 768) {
+      generateCard[i].getElementsByClassName('projecttitle')[0].innerHTML = projectData[i].mobileName;
+      while (generateCard[i].getElementsByClassName('client')[0].firstChild) { generateCard[i].getElementsByClassName('client')[0].removeChild(generateCard[i].getElementsByClassName('client')[0].firstChild); }
+      projectData[i].mobileClient.forEach((item, index) => {
+        const li = document.createElement('li');
+        const classname = ['type', 'tech', 'year'];
+        li.innerHTML = item;
+        li.classList.add(classname[index]);
+        generateCard[i].getElementsByClassName('client')[0].appendChild(li);
+      });
+      generateCard[i].getElementsByClassName('projectdetail')[0].innerHTML = projectData[i].mobiledetail;
+    } else {
+      generateCard[i].getElementsByClassName('projecttitle')[0].innerHTML = projectData[i].desktopName;
+      while (generateCard[i].getElementsByClassName('client')[0].firstChild) { generateCard[i].getElementsByClassName('client')[0].removeChild(generateCard[i].getElementsByClassName('client')[0].firstChild); }
+      projectData[i].desktopClient.forEach((item, index) => {
+        const li = document.createElement('li');
+        const classname = ['type', 'tech', 'year'];
+        li.innerHTML = item;
+        li.classList.add(classname[index]);
+
+        generateCard[i].getElementsByClassName('client')[0].appendChild(li);
+      });
+      generateCard[i].getElementsByClassName('projectdetail')[0].innerHTML = projectData[i].desktopdetail;
+    }
+  });
+}
+// popup windows data populate
+for (let i = 0; i <= 3; i += 1) {
+  seeProject[i].addEventListener('click', () => {
+    popupWindow.style.display = 'block';
+    body.style.overflow = 'hidden';
+    document.getElementById('popname').innerHTML = projectData[i].desktopName;
+    while (popClient.firstChild)popClient.removeChild(popClient.firstChild);
+    projectData[i].desktopClient.forEach((item, index) => {
+      const li = document.createElement('li');
+      const classname = ['type', 'tech', 'year'];
+      li.innerHTML = item;
+      li.classList.add(classname[index]);
+      popClient.appendChild(li);
+    });
+    popDesktopDetail.innerHTML = projectData[i].popdesktopdetail;
+    seeLive.innerHTML = ''; // Clear the inner HTML of the "See Live" button
+    const liveLink = document.createElement('a'); // Create an anchor element
+    liveLink.href = projectData[i].liveLink; // Use the liveLink property from projectData
+    liveLink.target = '_blank'; // Open the link in a new tab/window
+    liveLink.textContent = projectData[i].seelive; // Set the text content of the link
+    liveLink.style.textDecoration = 'none';
+    seeLive.appendChild(liveLink); // Append the link to the "See Live" button
+
+    seeSource.innerHTML = '<i class="fa-brands fa-github"></i> ';
+
+    const liveSource = document.createElement('a'); // Create an anchor element
+    liveSource.href = projectData[i].liveSource; // Use the liveLink property from projectData
+    liveSource.target = '_blank'; // Open the link in a new tab/window
+    liveSource.textContent = projectData[i].seesource; // Set the text content of the link
+    liveSource.style.textDecoration = 'none';
+    seeSource.appendChild(liveSource); // Append the link to the "See Live" button
+
+    popPicture.src = projectData[i].desktopPicture;
+    popPicture.alt = projectData[i].desktopAlt;
+    while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
+    projectData[i].desktopTag.forEach((item) => {
+      const li = document.createElement('li');
+      li.innerHTML = item;
+      popTag.appendChild(li);
+    });
+    popMobileDetail.style.display = 'none';
+    window.addEventListener('resize', () => {
+      if (window.innerWidth < 768) {
+        popName.style.fontSize = '24px';
+        popMobileDetail.style.display = 'block';
+        popupWindow.style.display = 'block';
+        popupWindow.style.width = '375px';
+        body.style.overflow = 'hidden';
+        document.getElementById('popname').innerHTML = projectData[i].mobileName;
+        while (popClient.firstChild)popClient.removeChild(popClient.firstChild);
+        projectData[i].mobileClient.forEach((item, index) => {
+          const li = document.createElement('li');
+          const classname = ['type', 'tech', 'year'];
+          li.innerHTML = item;
+          li.classList.add(classname[index]);
+          popClient.appendChild(li);
+        });
+        popMobileDetail.innerHTML = projectData[i].popmobiledetail;
+        popPicture.src = projectData[i].mobilePicture;
+        popPicture.alt = projectData[i].mobileAlt;
+        while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
+        projectData[i].mobileTag.forEach((item) => {
+          const li = document.createElement('li');
+          li.innerHTML = item;
+          popTag.appendChild(li);
+        });
+      } else {
+        popupWindow.style.width = '100%';
+        popupWindow.style.display = 'block';
+        body.style.overflow = 'hidden';
+        document.getElementById('popname').innerHTML = projectData[i].desktopName;
+        while (popClient.firstChild)popClient.removeChild(popClient.firstChild);
+        projectData[i].desktopClient.forEach((item, index) => {
+          const li = document.createElement('li');
+          const classname = ['type', 'tech', 'year'];
+          li.innerHTML = item;
+          li.classList.add(classname[index]);
+          popClient.appendChild(li);
+        });
+        popPicture.src = projectData[i].desktopPicture;
+        popPicture.alt = projectData[i].desktopAlt;
+        while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
+        projectData[i].desktopTag.forEach((item) => {
+          const li = document.createElement('li');
+          li.innerHTML = item;
+          popTag.appendChild(li);
+        });
+        popMobileDetail.style.display = 'none';
+      }
+    });
+    if (window.innerWidth < 768) {
+      popName.style.fontSize = '24px';
+      popupWindow.style.width = '375px';
+      popMobileDetail.style.display = 'block';
+      popupWindow.style.display = 'block';
+      body.style.overflow = 'hidden';
+      document.getElementById('popname').innerHTML = projectData[i].mobileName;
+      while (popClient.firstChild)popClient.removeChild(popClient.firstChild);
+      projectData[i].mobileClient.forEach((item, index) => {
+        const li = document.createElement('li');
+        const classname = ['type', 'tech', 'year'];
+        li.innerHTML = item;
+        li.classList.add(classname[index]);
+        popClient.appendChild(li);
+      });
+      popPicture.src = projectData[i].mobilePicture;
+      popPicture.alt = projectData[i].mobileAlt;
+      while (popTag.firstChild)popTag.removeChild(popTag.firstChild);
+      projectData[i].mobileTag.forEach((item) => {
+        const li = document.createElement('li');
+        li.innerHTML = item;
+        popTag.appendChild(li);
+      });
+    }
+  });
+}
+// form validation starting here.
+const email = document.getElementById('email');
+const errorMessage = document.getElementById('errormessage');
 const form = document.getElementById('form');
-const email = document.getElementById('mail');
-const error = document.querySelector('.error');
 
-form.addEventListener('submit', (e) => {
-  const message = [];
-  if (email.value !== email.value.toLowerCase()) {
-    e.preventDefault();
-    message.push('E-mail has to be in lowercase letters !!!');
+// check email validation  of  lower cases
+const emailValidation = (input) => {
+  if (input === input.toLowerCase()) {
+    return true;
   }
-  if (message.length > 0) {
-    error.innerText = message.join(', ');
+  return false;
+};
+// check email address and submit form
+form.addEventListener('submit', (event) => {
+  errorMessage.innerHTML = '';
+  if (emailValidation(email.value)) {
+    errorMessage.innerHTML = '';
+  } else {
+    event.preventDefault();
+    errorMessage.innerHTML = 'please change your email address to lower case';
   }
 });
-/** ****** END OF VALIDATE CONTACT FORM ***** */
