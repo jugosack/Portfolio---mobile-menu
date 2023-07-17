@@ -1,0 +1,54 @@
+.techstacklang,
+.techstackframe,
+.techstackskill {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.rotate {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.langicon {
+  cursor: pointer;
+}
+
+.icon-container {
+  display: inline-block;
+  transition: transform 0.3s ease-in-out;
+}
+
+.rotate .icon-container {
+  transform: rotate(90deg);
+}
+
+.rotate .fa-chevron-right {
+  transition: transform 0.3s ease-in-out;
+  transform: rotate(0deg);
+}
+
+.rotate.rotate-90 .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.langicon {
+  transition: all 0.5s linear;
+}
+
+.langicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+.langicon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+  }
+  
+  .langicon.rotate {
+    transform: rotate(90deg);
+  }
+  

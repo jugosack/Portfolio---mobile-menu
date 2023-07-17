@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable func-names */
 /* eslint-disable max-len */
 const mobileoption = document.getElementById('mobileoption');
 const body = document.querySelector('body');
@@ -333,4 +335,74 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
     errorMessage.innerHTML = 'please change your email address to lower case';
   }
+});
+// document.addEventListener('DOMContentLoaded', () => {
+//   const langIcon = document.querySelector('.langicon');
+//   const techStackLang = document.querySelector('.techstacklang');
+//   const frameIcon = document.querySelector('.frameicon');
+//   const techStackFrame = document.querySelector('.techstackframe');
+//   const skillIcon = document.querySelector('.skillicon');
+//   const techStackSkill = document.querySelector('.techstackskill');
+
+//   langIcon.addEventListener('click', () => {
+//     techStackLang.classList.toggle('show');
+//   });
+
+//   frameIcon.addEventListener('click', () => {
+//     techStackFrame.classList.toggle('show');
+//   });
+
+//   skillIcon.addEventListener('click', () => {
+//     techStackSkill.classList.toggle('show');
+//   });
+// });
+// document.addEventListener('DOMContentLoaded', () => {
+//   const langIcon = document.querySelector('.langicon');
+//   const techStackLang = document.querySelector('.techstacklang');
+//   const frameIcon = document.querySelector('.frameicon');
+//   const techStackFrame = document.querySelector('.techstackframe');
+//   const skillIcon = document.querySelector('.skillicon');
+//   const techStackSkill = document.querySelector('.techstackskill');
+
+//   langIcon.addEventListener('click', () => {
+//     techStackLang.classList.toggle('show');
+//     langIcon.classList.toggle('rotate');
+//   });
+
+//   frameIcon.addEventListener('click', () => {
+//     techStackFrame.classList.toggle('show');
+//     frameIcon.classList.toggle('rotate');
+//   });
+
+//   skillIcon.addEventListener('click', () => {
+//     techStackSkill.classList.toggle('show');
+//     skillIcon.classList.toggle('rotate');
+//   });
+// });
+document.addEventListener('DOMContentLoaded', () => {
+  const langIcons = document.querySelectorAll('.langicon');
+  const techStackLang = document.querySelector('.techstacklang');
+
+  langIcons.forEach((icon) => {
+    icon.addEventListener('click', () => {
+      techStackLang.classList.toggle('show');
+      icon.classList.toggle('rotate');
+    });
+  });
+
+  const frameIcon = document.querySelector('.frameicon');
+  const techStackFrame = document.querySelector('.techstackframe');
+
+  frameIcon.addEventListener('click', () => {
+    techStackFrame.classList.toggle('show');
+    frameIcon.classList.toggle('rotate');
+  });
+
+  const skillIcon = document.querySelector('.skillicon');
+  const techStackSkill = document.querySelector('.techstackskill');
+
+  skillIcon.addEventListener('click', () => {
+    techStackSkill.classList.toggle('show');
+    skillIcon.classList.toggle('rotate');
+  });
 });
