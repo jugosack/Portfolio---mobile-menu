@@ -1,6 +1,9 @@
 .techstacklang,
+.techstacklang_1,
 .techstackframe,
-.techstackskill {
+.techstackframe_1,
+.techstackskill,
+.techstackskill_1 {
   display: none;
 }
 
@@ -14,6 +17,14 @@
 }
 
 .langicon {
+  cursor: pointer;
+}
+
+.frameicon {
+  cursor: pointer;
+}
+
+.skillicon{
   cursor: pointer;
 }
 
@@ -39,10 +50,42 @@
   transition: all 0.5s linear;
 }
 
+.frameicon {
+  transition: all 0.5s linear;
+}
+
+.skillicon {
+  transition: all 0.5s linear;
+}
+
 .langicon.down .rotate .fa-chevron-right {
   transform: rotate(90deg);
 }
+
+
+
+
+.frameicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
+.skillicon.down .rotate .fa-chevron-right {
+  transform: rotate(90deg);
+}
+
 .langicon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+  }
+
+  .frameicon {
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+  }
+
+  .skillicon {
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
@@ -52,3 +95,10 @@
     transform: rotate(90deg);
   }
   
+  .frameicon.rotate {
+    transform: rotate(90deg);
+  }
+
+  .skillicon.rotate {
+    transform: rotate(90deg);
+  }

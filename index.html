@@ -162,19 +162,12 @@
         <section class="aboutcol2">
           <ul class="techstack">
             <li>
-              <p class="aboutlanguage">Languages</p>
-              <i class="langicon fa-solid fa-chevron-right"></i>
-
-          
-
-    
-              <ul class="techstacklang">
+               <p class="aboutlanguage">Languages</p>
+               <!-- <div class="expand">A</div> -->
+               <i class="langicon fa-solid fa-chevron-right"></i>
+               <ul class="techstacklang">
                 <li class="langdetail">
-                  <img
-                    class="techimage"
-                    src="./images/js.png"
-                    alt="javaScript"
-                  />
+                  <img class="techimage" src="./images/js.png" alt="javaScript" />
                   <p class="langgap">JavaSrcipt</p>
                 </li>
                 <li class="langdetail">
@@ -189,21 +182,79 @@
                   <img class="techimage" src="./images/ruby.png" alt="Ruby" />
                   <p class="langgap">Ruby</p>
                 </li>
-                <li class="langdetail">
-                  <img class="techimage" src="./images/Java.png" alt="Java" />
-                  <p class="langgap">Java</p>
-                </li>
-              </ul>
+               </ul>
+               <ul class="techstacklang_1">
+                   <li class="langdetail">
+                     <img class="techimage" src="./images/Java.png" alt="Java" />
+                     <p class="langgap">Java</p>
+                   </li>
+               </ul>
             </li>
             <hr />
             <li>
-              <p class="aboutlanguage">Frameworks</p>
+              <p class="aboutlanguage_1">Frameworks</p>
               <i class="frameicon fa-solid fa-chevron-right"></i>
+              <ul class="techstackframe">
+                <li class="langdetail">
+                  <img class="techimage" src="./images/rails-ta.png" alt="Rails" />
+                  <p class="langgap">Rails</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/react-ta.png" alt="React" />
+                  <p class="langgap">React</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/rspec-ta.png" alt="Rspec" />
+                  <p class="langgap">Rspec</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/capybara.png" alt="Capybara" />
+                  <p class="langgap">Capybara</p>
+                </li>
+               </ul>
+               <ul class="techstackframe_1">
+                   <li class="langdetail">
+                     <img class="techimage" src="./images/bootstrap.svg" alt="Bootstrap" />
+                     <p class="langgap">Bootstrap</p>
+                   </li>
+                   <li class="langdetail">
+                    <img class="techimage" src="./images/cancancan.png" alt="CanCanCan" />
+                    <p class="langgap">CanCanCan</p>
+                  </li>
+                  <li class="langdetail">
+                    <img class="techimage" src="./images/jest-ta.png" alt="Jest" />
+                    <p class="langgap">Jest</p>
+                  </li>
+               </ul>
             </li>
             <hr />
             <li>
-              <p class="aboutlanguage">Skills</p>
+              <p class="aboutlanguage_2">Skills</p>
               <i class="skillicon fa-solid fa-chevron-right"></i>
+              <ul class="techstackskill">
+                <li class="langdetail">
+                  <img class="techimage" src="./images/git-ta.png" alt="Git" />
+                  <p class="langgap">Git</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/psql-ta.png" alt="PostgreSQL" />
+                  <p class="langgap">PostgreSQL</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/github.png" alt="Github" />
+                  <p class="langgap">Github</p>
+                </li>
+                <li class="langdetail">
+                  <img class="techimage" src="./images/replit.png" alt="Replit" />
+                  <p class="langgap">Replit</p>
+                </li>
+               </ul>
+               <ul class="techstackskill_1">
+                   <li class="langdetail">
+                     <img class="techimage" src="./images/kanbanboard.png" alt="Kanbanboard" />
+                     <p class="langgap">Kanban board</p>
+                   </li>
+               </ul>
             </li>
             <hr />
           </ul>
@@ -230,7 +281,7 @@
               name="fullname"
               type="text"
               id="inputname"
-              placeholder="Lorem Ipsum Dolor"
+              placeholder="Name"
               maxlength="30"
               required
             />
@@ -239,7 +290,7 @@
               name="email"
               type="email"
               id="email"
-              placeholder="jugoslav_ackoski@yahoo.com"
+              placeholder="Email"
               required
             />
             <small class="errormessasge" id="errormessage"></small>

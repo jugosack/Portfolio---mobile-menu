@@ -412,6 +412,46 @@ img {
   padding-left: 0;
 }
 
+.techstacklang_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackframe {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackframe_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackskill {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
+.techstackskill_1 {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 12px;
+  padding-left: 0;
+}
+
 /* language style */
 .aboutlanguage {
   font-size: 20px;
@@ -419,23 +459,39 @@ img {
   font-weight: 500;
   display: inline;
   color: #000;
+  padding-right: 200px;
 }
 
 /* direction icons gaps style */
 .langicon {
-  padding-left: 150px;
+  /* padding-left: 150px; */
   color: #8d949c;
   width: 2px;
 }
-
+.aboutlanguage_1 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline;
+  color: #000;
+  padding-right: 190px;
+}
 .frameicon {
-  padding-left: 140px;
+  /* padding-left: 140px; */
   color: #8d949c;
   width: 2px;
 }
 
+.aboutlanguage_2 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 500;
+  display: inline;
+  color: #000;
+  padding-right: 250px;
+}
 .skillicon {
-  padding-left: 203px;
+  /* padding-left: 203px; */
   color: #8d949c;
   width: 2px;
 }
@@ -454,6 +510,70 @@ ul.techstacklang > li.langdetail {
   margin-bottom: 10px;
 }
 
+ul.techstacklang_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackframe > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackframe_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackskill > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.techstackskill_1 > li.langdetail {
+  display: flex;
+  justify-self: start;
+  flex-direction: row;
+  background-color: #f7f7f9;
+  height: 66.72px;
+  border-radius: 8px;
+  color: #253858;
+  font-size: 15px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
 /* Style tech stack images */
 
 .techimage {
@@ -817,7 +937,7 @@ footer {
 
   /* direction icon position */
   .langicon {
-    padding-left: 340px;
+    /* padding-left: 340px; */
   }
 
   /* icons postion  */
@@ -840,6 +960,46 @@ footer {
     margin-right: 0;
   }
 
+  .techstackframe {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .techstackskill {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .techstacklang_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .techstackframe_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
+  .techstackskill_1 {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    margin-top: 12px;
+    padding-left: 0;
+    margin-right: 0;
+  }
   ul.techstacklang > li.langdetail {
     display: flex;
     flex-direction: column;
@@ -852,6 +1012,62 @@ footer {
     padding-right: 0;
   }
 
+  ul.techstackframe > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+  ul.techstackskill > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+  ul.techstacklang_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+
+  ul.techstackframe_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
+  ul.techstackskill_1 > li.langdetail {
+    display: flex;
+    flex-direction: column;
+    height: 120px;
+    width: 122px;
+    font-size: 15px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 12px;
+    padding-right: 0;
+  }
   /* programming language gaps */
   .langgap {
     margin-top: 0;
@@ -861,16 +1077,23 @@ footer {
   /* margin for language detail */
   .aboutlanguage {
     margin-left: 18px;
+    padding-right: 350px;
   }
-
+  .aboutlanguage_1 {
+    margin-left: 18px;
+    padding-right: 340px;
+  }
   /* framework icon position */
   .frameicon {
-    padding-left: 330px;
+    /* padding-left: 330px; */
   }
-
+  .aboutlanguage_2 {
+    margin-left: 18px;
+    padding-right: 400px;
+  }
   /* skll icon positon */
   .skillicon {
-    padding-left: 390px;
+    /* padding-left: 390px; */
   }
 
   hr {

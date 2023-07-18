@@ -336,73 +336,36 @@ form.addEventListener('submit', (event) => {
     errorMessage.innerHTML = 'please change your email address to lower case';
   }
 });
-// document.addEventListener('DOMContentLoaded', () => {
-//   const langIcon = document.querySelector('.langicon');
-//   const techStackLang = document.querySelector('.techstacklang');
-//   const frameIcon = document.querySelector('.frameicon');
-//   const techStackFrame = document.querySelector('.techstackframe');
-//   const skillIcon = document.querySelector('.skillicon');
-//   const techStackSkill = document.querySelector('.techstackskill');
-
-//   langIcon.addEventListener('click', () => {
-//     techStackLang.classList.toggle('show');
-//   });
-
-//   frameIcon.addEventListener('click', () => {
-//     techStackFrame.classList.toggle('show');
-//   });
-
-//   skillIcon.addEventListener('click', () => {
-//     techStackSkill.classList.toggle('show');
-//   });
-// });
-// document.addEventListener('DOMContentLoaded', () => {
-//   const langIcon = document.querySelector('.langicon');
-//   const techStackLang = document.querySelector('.techstacklang');
-//   const frameIcon = document.querySelector('.frameicon');
-//   const techStackFrame = document.querySelector('.techstackframe');
-//   const skillIcon = document.querySelector('.skillicon');
-//   const techStackSkill = document.querySelector('.techstackskill');
-
-//   langIcon.addEventListener('click', () => {
-//     techStackLang.classList.toggle('show');
-//     langIcon.classList.toggle('rotate');
-//   });
-
-//   frameIcon.addEventListener('click', () => {
-//     techStackFrame.classList.toggle('show');
-//     frameIcon.classList.toggle('rotate');
-//   });
-
-//   skillIcon.addEventListener('click', () => {
-//     techStackSkill.classList.toggle('show');
-//     skillIcon.classList.toggle('rotate');
-//   });
-// });
 document.addEventListener('DOMContentLoaded', () => {
   const langIcons = document.querySelectorAll('.langicon');
   const techStackLang = document.querySelector('.techstacklang');
+  const techStackLangOne = document.querySelector('.techstacklang_1');
 
   langIcons.forEach((icon) => {
     icon.addEventListener('click', () => {
       techStackLang.classList.toggle('show');
+      techStackLangOne.classList.toggle('show');
       icon.classList.toggle('rotate');
     });
   });
 
   const frameIcon = document.querySelector('.frameicon');
   const techStackFrame = document.querySelector('.techstackframe');
+  const techStackFrameOne = document.querySelector('.techstackframe_1');
 
   frameIcon.addEventListener('click', () => {
     techStackFrame.classList.toggle('show');
+    techStackFrameOne.classList.toggle('show');
     frameIcon.classList.toggle('rotate');
   });
 
   const skillIcon = document.querySelector('.skillicon');
   const techStackSkill = document.querySelector('.techstackskill');
+  const techStackSkillOne = document.querySelector('.techstackskill_1');
 
   skillIcon.addEventListener('click', () => {
     techStackSkill.classList.toggle('show');
+    techStackSkillOne.classList.toggle('show');
     skillIcon.classList.toggle('rotate');
   });
 });
