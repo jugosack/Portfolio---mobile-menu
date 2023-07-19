@@ -19,10 +19,13 @@
 
   /* Responsive Styles for max width 425px */
 @media (max-width: 425px) {
+  /* .toolbar{
+    position:fixed;
+  } */
     .logo-image {
       width: 60px;
       height: 60px;
-      margin-top:-15px;
+      margin-top:-30px;
     }
   
     .toolbar > nav > a {
@@ -33,7 +36,7 @@
     }
   
     .logo-text {
-        margin-top: -15px;
+        margin-top: -20px;
         margin-left: 0px;
     }
 
@@ -45,5 +48,10 @@
         margin-right: -5px;
         color: #6070ff;
         margin-top: -30px;
+        position:fixed;
+    }
+
+    .mobilemenu{
+      margin-left:280px;
     }
   }
