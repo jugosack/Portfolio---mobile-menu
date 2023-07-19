@@ -40,13 +40,12 @@ body {
   justify-content: space-between;
   margin-right: 10px;
   color: #6070ff;
-  /* position: fixed; */
 
+  /* position: fixed; */
 }
 
 
 /* toolar mobile view version for 768px and below */
-
 
 .desktopmenu,
 .desktoppic {
@@ -220,6 +219,7 @@ ul.buttongroup > li > a:active {
 .mobilemenu {
   background-color: transparent;
   border: none;
+
   /* margin-left: 280px */
 }
 
@@ -473,6 +473,7 @@ img {
   color: #8d949c;
   width: 2px;
 }
+
 .aboutlanguage_1 {
   font-size: 20px;
   line-height: 24px;
@@ -481,6 +482,7 @@ img {
   color: #000;
   padding-right: 190px;
 }
+
 .frameicon {
   /* padding-left: 140px; */
   color: #8d949c;
@@ -495,6 +497,7 @@ img {
   color: #000;
   padding-right: 250px;
 }
+
 .skillicon {
   /* padding-left: 203px; */
   color: #8d949c;
@@ -579,6 +582,7 @@ ul.techstackskill_1 > li.langdetail {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 /* Style tech stack images */
 
 .techimage {
@@ -973,6 +977,7 @@ footer {
     padding-left: 0;
     margin-right: 0;
   }
+
   .techstackskill {
     display: flex;
     flex-direction: row;
@@ -981,6 +986,7 @@ footer {
     padding-left: 0;
     margin-right: 0;
   }
+
   .techstacklang_1 {
     display: flex;
     flex-direction: row;
@@ -989,6 +995,7 @@ footer {
     padding-left: 0;
     margin-right: 0;
   }
+
   .techstackframe_1 {
     display: flex;
     flex-direction: row;
@@ -997,6 +1004,7 @@ footer {
     padding-left: 0;
     margin-right: 0;
   }
+
   .techstackskill_1 {
     display: flex;
     flex-direction: row;
@@ -1005,6 +1013,7 @@ footer {
     padding-left: 0;
     margin-right: 0;
   }
+
   ul.techstacklang > li.langdetail {
     display: flex;
     flex-direction: column;
@@ -1028,6 +1037,7 @@ footer {
     margin-left: 12px;
     padding-right: 0;
   }
+
   ul.techstackskill > li.langdetail {
     display: flex;
     flex-direction: column;
@@ -1039,6 +1049,7 @@ footer {
     margin-left: 12px;
     padding-right: 0;
   }
+
   ul.techstacklang_1 > li.langdetail {
     display: flex;
     flex-direction: column;
@@ -1062,6 +1073,7 @@ footer {
     margin-left: 12px;
     padding-right: 0;
   }
+
   ul.techstackskill_1 > li.langdetail {
     display: flex;
     flex-direction: column;
@@ -1073,6 +1085,7 @@ footer {
     margin-left: 12px;
     padding-right: 0;
   }
+
   /* programming language gaps */
   .langgap {
     margin-top: 0;
@@ -1084,18 +1097,22 @@ footer {
     margin-left: 18px;
     padding-right: 350px;
   }
+
   .aboutlanguage_1 {
     margin-left: 18px;
     padding-right: 340px;
   }
+
   /* framework icon position */
   .frameicon {
     /* padding-left: 330px; */
   }
+
   .aboutlanguage_2 {
     margin-left: 18px;
     padding-right: 400px;
   }
+
   /* skll icon positon */
   .skillicon {
     /* padding-left: 390px; */
@@ -1113,6 +1130,7 @@ footer {
     background-color: #6070ff;
     background-position-y: 140px;
     border-top-left-radius: 150px;
+
     /* margin-top: -270px; */
     margin-bottom: 0;
   }
