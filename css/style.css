@@ -343,7 +343,7 @@ img {
   border-color: white;
   padding-right: 24px;
   padding-left: 24px;
-  height: 1150px;
+  height: 1250px;
 }
 
 /* style about myself title */
@@ -911,7 +911,7 @@ footer {
     border-style: solid;
     border-width: 1px;
     border-color: white;
-    height: 924px;
+    height: 750px;
   }
 
   /* column one style */
@@ -1108,7 +1108,7 @@ footer {
     background-color: #6070ff;
     background-position-y: 140px;
     border-top-left-radius: 150px;
-    margin-top: -300px;
+    /* margin-top: -270px; */
     margin-bottom: 0;
   }
 

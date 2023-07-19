@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 /* eslint-disable func-names */
 /* eslint-disable max-len */
@@ -336,16 +338,106 @@ form.addEventListener('submit', (event) => {
     errorMessage.innerHTML = 'please change your email address to lower case';
   }
 });
+
+// const expandFrameIcons = document.querySelectorAll('.frameicon');
+// const expandSkillIcons = document.querySelectorAll('.skillicon');
+// const sectionSpacing = document.getElementById('About');
+// const contactFooter = document.getElementById('Contact');
+
+// let isFrameExpanded = false;
+// let isSkillExpanded = false;
+
+// expandFrameIcons.forEach((icon) => {
+//   icon.addEventListener('click', () => {
+//     isFrameExpanded = !isFrameExpanded;
+//     sectionSpacing.classList.toggle('marginFrameBottom', isFrameExpanded);
+//     updateSectionHeight();
+//     updateContactMargin();
+//   });
+// });
+
+// expandSkillIcons.forEach((icon) => {
+//   icon.addEventListener('click', () => {
+//     isSkillExpanded = !isSkillExpanded;
+//     sectionSpacing.classList.toggle('white-background', isSkillExpanded);
+//     updateSectionHeight();
+//     updateContactMargin();
+//   });
+// });
+
+// function updateSectionHeight() {
+//   if (isSkillExpanded && isFrameExpanded) {
+//     sectionSpacing.style.height = '1300px';
+//   } else if (isSkillExpanded || isFrameExpanded) {
+//     sectionSpacing.style.height = '1000px';
+//   } else {
+//     sectionSpacing.style.height = ''; // Reset to default height
+//   }
+// }
+
+// function updateContactMargin() {
+//   contactFooter.style.marginTop = isFrameExpanded || isSkillExpanded ? '0px' : '';
+// }
+const expandFrameIcons = document.querySelectorAll('.frameicon');
+const expandSkillIcons = document.querySelectorAll('.skillicon');
+const sectionSpacing = document.getElementById('About');
+const contactFooter = document.getElementById('Contact');
+
+let isFrameExpanded = false;
+let isSkillExpanded = false;
+
+expandFrameIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    isFrameExpanded = !isFrameExpanded;
+    sectionSpacing.classList.toggle('marginFrameBottom', isFrameExpanded);
+    updateSectionHeight();
+    updateContactMargin();
+  });
+});
+
+expandSkillIcons.forEach((icon) => {
+  icon.addEventListener('click', () => {
+    isSkillExpanded = !isSkillExpanded;
+    sectionSpacing.classList.toggle('white-background', isSkillExpanded);
+    updateSectionHeight();
+    updateContactMargin();
+  });
+});
+
+function updateSectionHeight() {
+  if (isSkillExpanded && isFrameExpanded) {
+    sectionSpacing.style.height = '2310px';
+  } else if (isSkillExpanded) {
+    sectionSpacing.style.height = '1700px';
+  } else if (isFrameExpanded) {
+    sectionSpacing.style.height = '1900px';
+  } else {
+    sectionSpacing.style.height = ''; // Reset to default height
+  }
+}
+
+function updateContactMargin() {
+  contactFooter.style.marginTop = isFrameExpanded || isSkillExpanded ? '0px' : '';
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   const langIcons = document.querySelectorAll('.langicon');
   const techStackLang = document.querySelector('.techstacklang');
   const techStackLangOne = document.querySelector('.techstacklang_1');
 
+  techStackLang.classList.add('show');
+  techStackLangOne.classList.add('show');
+
   langIcons.forEach((icon) => {
     icon.addEventListener('click', () => {
-      techStackLang.classList.toggle('show');
-      techStackLangOne.classList.toggle('show');
       icon.classList.toggle('rotate');
+      if (icon.classList.toggle('show')) {
+        techStackLang.classList.remove('show');
+        techStackLangOne.classList.remove('show');
+      } else {
+        techStackLang.classList.add('show');
+        techStackLangOne.classList.add('show');
+      }
     });
   });
 
